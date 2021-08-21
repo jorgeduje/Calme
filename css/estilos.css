@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+:root{
+    --colorTextos: #0202028f;
+    --colorBotones: #f69229;
+    --colorFondo: #ff69b4;
+    --paddingSecciones: 60px 0;
+    --marginElementos: 40px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #ff69b431;
+    background: linear-gradient(to top left, hotpink, pink);
+   
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingSecciones);
+}
+
+/* Menu */
+
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    background: linear-gradient(#ff69b48e,#ffc0cb);
+}
+
+
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.enlaces a:hover{
+    text-decoration: underline;
+}
+/* Hero */
+
+.hero{
+    height: 500px;
+    background-image: url(../img/fondo\ header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero p{
+    font-weight: 300;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.boton{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background:pink;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.boton:hover{
+    background-color:hotpink;
+}
+
+/* Main */
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 35px;
+    color: var(--colorFondo);
+}
+
+.copy{
+    text-align: center;
+    color: var(--colorTextos);
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+
+
+
+.serviciosimg{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.productos{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px grey;
+    object-fit: cover;
+
+}
+
+.fondoProd{
+    background-image: linear-gradient(to top left, whitesmoke, rgba(245, 245, 220, 0.705));
+}
+
+
+.personas{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.person1{
+    font-size: 20px;
+    color: hotpink;
+}
+.person{
+    font-size: 20px;
+    color:whitesmoke;
+    
+}
+
+.colorfff{
+    color: #fff;
+   margin-bottom: 10px;
+}
+
+.tarjeta{
+    width: 30%;
+   
+}
+
+.experiencia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+   
+}
+.titulos-exp{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+.margintop{
+    margin-top: 40px;
+}
+
+footer{
+    background-image: url(../img/footer4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+footer .titulo-seccion,
+footer .copy{
+    color: #000;
+}
+
+.redes-sociales{
+    padding-top: var(--marginElementos);
+    width: 80%;
+   
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+}
+.redes-sociales i{
+    color:#000;
+    display: inline-block;
+    font-size: 60px;
+   margin-top: 20px;
+
+}
+
+#reloj{
+    font-family: sans-serif;
+    font-size: 60px;
+    text-shadow: 0px 0px 1px #333;
+    color:#fff;
+}
+.reloj-contenedor{
+    background-color: pink;
+    padding: 25px;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 5px;
+   margin-right: 0;
+    
+}
+#fecha{
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.cartel{
+    width: 20%;
+    border: 2px solid white;
+    background-color: hotpink;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        
+        height: 80px;
+        justify-content: space-evenly;
+    }
+
+    .hero h1{
+        font-size: 38px;
+    }    
+
+    .experiencia{
+        flex-direction: column;
+      
+    }
+
+    .tarjeta{
+        width: 90%;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .redes-sociales{
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes-sociales i{
+        color: rgba(0, 0, 0, 0.815);
+        
+    }
+    .reloj-contenedor{
+        
+        max-width: 100%;
+        
+        
+    }
+    .cartel{
+        width: 50%;
+    }
+}
